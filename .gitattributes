@@ -1,0 +1,2 @@
+# Keep asset hashes stable across Windows, Linux and macOS checkouts.
+* text=auto eol=lf

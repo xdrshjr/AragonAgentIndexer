@@ -1,6 +1,6 @@
 {
   "name": "@aragonmesh/project-indexer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "可复用的项目索引构建 SDK、技能和图谱工具",
   "type": "module",
   "private": false,
@@ -13,7 +13,13 @@
   "bugs": {
     "url": "https://github.com/xdrshjr/AragonAgentIndexer/issues"
   },
-  "keywords": ["agent", "code-index", "code-graph", "project-indexer", "sdk"],
+  "keywords": [
+    "agent",
+    "code-index",
+    "code-graph",
+    "project-indexer",
+    "sdk"
+  ],
   "engines": {
     "node": ">=18"
   },

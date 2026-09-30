@@ -18,7 +18,7 @@ npm pack
 然后在接入项目中安装生成的 tarball（替换为实际文件路径）：
 
 ```text
-npm install ./aragonmesh-project-indexer-0.1.0.tgz
+npm install ./aragonmesh-project-indexer-0.1.1.tgz
 ```
 
 ```javascript
@@ -74,7 +74,7 @@ npm test
 npm pack
 ```
 
-`npm run build` 检查资产并清理自身 dist 后编译，`npm run generate:assets` 更新规范化嵌入副本，`npm run check:assets` 校验。`npm pack` 自动构建，产出 `aragonmesh-project-indexer-0.1.0.tgz`。tarball 安装不需要 TypeScript，也不执行源码编译。修改源码后需重新构建；接入应用按自身方式重启或重新加载。
+`npm run build` 检查资产并清理自身 dist 后编译，`npm run generate:assets` 更新规范化嵌入副本，`npm run check:assets` 校验。`npm pack` 自动构建，产出 `aragonmesh-project-indexer-0.1.1.tgz`。tarball 安装不需要 TypeScript，也不执行源码编译。修改源码后需重新构建；接入应用按自身方式重启或重新加载。
 
 ## 目录结构
 
