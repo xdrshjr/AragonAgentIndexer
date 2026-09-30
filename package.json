@@ -1,0 +1,65 @@
+{
+  "name": "@aragonmesh/project-indexer",
+  "version": "0.1.0",
+  "description": "可复用的项目索引构建 SDK、技能和图谱工具",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdrshjr/AragonAgentIndexer.git"
+  },
+  "homepage": "https://github.com/xdrshjr/AragonAgentIndexer#readme",
+  "bugs": {
+    "url": "https://github.com/xdrshjr/AragonAgentIndexer/issues"
+  },
+  "keywords": ["agent", "code-index", "code-graph", "project-indexer", "sdk"],
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./graph-types": {
+      "types": "./dist/graph-types.d.ts",
+      "import": "./dist/graph-types.js"
+    },
+    "./budget": {
+      "types": "./dist/claude-md-budget.d.ts",
+      "import": "./dist/claude-md-budget.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "assets/index-graph-tools.py",
+    "assets/system-skills/project-indexer/SKILL.md",
+    "assets/system-skills/project-indexer/README.md",
+    "assets/system-skills/project-indexer/_meta.json",
+    "assets/system-skills/project-indexer/templates/claude-md-compaction.md",
+    "assets/system-skills/project-indexer/templates/cleancode-overrides.md",
+    "assets/system-skills/project-indexer/templates/cleancode-template.md",
+    "assets/system-skills/project-indexer/templates/config-template.md",
+    "assets/system-skills/project-indexer/templates/environments-template.md",
+    "assets/system-skills/project-indexer/templates/index-template.md",
+    "README.md",
+    "LICENSE",
+    "examples"
+  ],
+  "scripts": {
+    "generate:assets": "node scripts/generate-assets.mjs",
+    "check:assets": "node scripts/generate-assets.mjs --check",
+    "build": "node scripts/generate-assets.mjs --build",
+    "test": "vitest run",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vitest": "4.1.0",
+    "@types/node": "22.19.0"
+  }
+}

@@ -1,0 +1,13 @@
+export { prepareIndexBuild, startIndexBuild } from './build.js';
+export { prepareWorkspaceTools, measureClaudeMdForBuild, readIndexFileInfo, readIndexMtime } from './workspace.js';
+export { getProjectIndexerSkill, resolveProjectIndexerAssetDir, readProjectIndexerAsset } from './assets.js';
+export { deployIndexGraphTools, INDEX_GRAPH_TOOLS_FILENAME, INDEX_GRAPH_TOOLS_SOURCE_FILENAME } from './deploy-index-graph-tools.js';
+export { IndexBuildError } from './types.js';
+export type { IndexBuildOptions, IndexBuildErrorCode, IndexWarning, PreparedIndexBuild, WorkspaceToolsResult, IndexFileInfo, IndexSkillAsset, IndexRunnerRequest, IndexBuildRunner, ProjectIndexerSkillDefinition } from './types.js';
+export { buildIndexBuildPrompt } from './project-index-prompt.js';
+export type { IndexBuildPromptOptions } from './project-index-prompt.js';
+export type { ClaudeMdMeasurement } from './claude-md-budget.js';
+export type { GraphRescanScope } from './graph-types.js';
+export { buildGraphAuthoringBlock, GRAPH_BLOCK_VERSION, GRAPH_BLOCK_MAX_CHARS, GRAPH_TOOL_REL_PATH, GRAPH_OUT_REL_PATH } from './project-graph-prompt.js';
+export { sanitizeRescanScope, buildRescanScopeBlock, RESCAN_BLOCK_VERSION, RESCAN_BLOCK_MAX_CHARS } from './project-graph-rescan-prompt.js';
+export { buildClaudeMdBudgetBlock, CLAUDE_MD_BLOCK_VERSION, CLAUDE_MD_BLOCK_MAX_CHARS } from './claude-md-budget-prompt.js';

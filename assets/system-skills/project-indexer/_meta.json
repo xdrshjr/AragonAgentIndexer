@@ -1,0 +1,30 @@
+{
+  "owner": "AragonAgent-Skills",
+  "slug": "project-indexer",
+  "displayName": "Project Indexer",
+  "description": "Generate and use project index for quick codebase understanding in new Claude Code sessions",
+  "version": "1.2.0",
+  "tags": ["productivity", "codebase", "indexing", "navigation", "developer-tools", "cleancode"],
+  "license": "MIT",
+  "latest": {
+    "version": "1.2.0",
+    "publishedAt": 1756598400000
+  },
+  "history": [
+    {
+      "version": "1.0.0",
+      "publishedAt": 1738598400000,
+      "notes": "Initial release with full indexing workflow"
+    },
+    {
+      "version": "1.1.0",
+      "publishedAt": 1747180800000,
+      "notes": "Add Clean Code Guidelines injection: every index run now upserts a ~1,500-char Google-style cleancode section into CLAUDE.md, with language-aware overrides, four-preset config (strict/relaxed/custom/skip), version-agnostic marker matching, and a config.md Enabled flag to honour user opt-out across regenerations."
+    },
+    {
+      "version": "1.2.0",
+      "publishedAt": 1756598400000,
+      "notes": "Own the total length of CLAUDE.md, not just the two managed sections. Adds Step 6b (a three-tier lean/watch/over ladder and a lossless compaction pass that moves prose to .claude-index/notes/ and leaves a summary, the must-hold invariants and pointers behind), a whole-flow unattended clause so non-interactive index builds stop stalling on AskUserQuestion, Regeneration Step 2c (decide only; act in Step 6b), and a CLAUDE.md Budget block in config.md carrying the user's Compaction opt-out."
+    }
+  ]
+}
